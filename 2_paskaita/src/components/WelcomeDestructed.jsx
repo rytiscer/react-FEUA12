@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const WelcomeDestructed = ({ name }) => {
   // const { name } = props;
   return (

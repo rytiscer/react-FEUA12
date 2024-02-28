@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const ArrowFunctionWelcomeV2 = (props) => (
   <div>
     <h1>Hello {props.name}!</h1>

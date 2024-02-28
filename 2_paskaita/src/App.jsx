@@ -5,33 +5,15 @@ import ClassWelcome from "./components/ClassWelcome";
 import Welcome from "./components/Welcome";
 import WelcomeDestructed from "./components/WelcomeDestructed";
 import "./App.css";
+import FuncButton from "./components/FuncButton";
+import FuncDiv from "./components/FuncDiv";
+import ClassDiv from "./components/ClassDiv";
 
 function App() {
   return (
     <div>
-      <ClassWelcome name="Greta" />
-      <Welcome name="Tadas" />
-      <ArrowFunctionWelcome name="Rokas" />
-      <ArrowFunctionWelcomeV2 name="Romas" />
-      <WelcomeDestructed name="Paulius" />
-      Hello world
-      <div className="cards">
-        <Card
-          title="About"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi qui adipisci neque ab, ad iusto a deserunt earum eveniet iste quis fugiat ducimus voluptates magnam magni quia veniam quae delectus.
-"
-        />
-        <Card
-          title="Contacts"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi qui adipisci neque ab, ad iusto a deserunt earum eveniet iste quis fugiat ducimus voluptates magnam magni quia veniam quae delectus.
-"
-        />
-        <Card
-          title="Sales"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi qui adipisci neque ab, ad iusto a deserunt earum eveniet iste quis fugiat ducimus voluptates magnam magni quia veniam quae delectus.
-"
-        />
-      </div>
+      <FuncDiv h3Text="Some text" pText="random text" />
+      <ClassDiv h3Text="Random random text" pText="bla bla bla" />
     </div>
   );
 }
