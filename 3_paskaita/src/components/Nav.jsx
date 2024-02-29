@@ -18,10 +18,10 @@ const Nav = (props) => {
         </a>
         <a href="#">
           <img className="navLogo" src={props.thirdLogoNav} alt="Logo" />
-          {props.fithItemNav}
+          {props.fifthItemNav}
         </a>
         <button className="navBtn">
-          <img src={props.fourthLogoNav} alt="Logo" />
+          <img className="navLogo" src={props.fourthLogoNav} alt="Logo" />
           {props.navButtonText}
         </button>
       </div>

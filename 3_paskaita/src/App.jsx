@@ -35,7 +35,7 @@ function App() {
         secondLogoNav={questionLogo}
         fourthItemNav="Pagalba"
         thirdLogoNav={searchLogo}
-        fifthItem="Paieška"
+        fifthItemNav="Paieška"
         fourthLogoNav={userLogo}
         navButtonText="SIŲSTI SIUNTĄ"
       />
