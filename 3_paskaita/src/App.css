@@ -1,0 +1,71 @@
+.topLine
+{
+  display: flex;
+  justify-content: space-between; /* Padalyti erdvę horizontaliai tarp leftSide ir rightSide */
+  align-items: center; /* Centruoti elementus vertikaliai */
+  background-color: black;
+  width: 100%;
+  height: 40px;
+}
+
+.topLine img
+{
+  width: 20px;
+  vertical-align: middle; /* Centruoti paveikslėlio vertikaliai */
+  display: inline-block; /* Nustatyti img kaip bloko elementą */
+  margin-right: 5px;
+}
+
+.leftSide,
+.leftSideNav {
+  margin-right: auto; /* Pajungti dešinįjį kraštą, kad leftSide būtų kairėje */
+  margin-left: 100px;
+}
+
+.rightSide,
+.rightSideNav {
+  margin-left: auto; /* Pajungti kairįjį kraštą, kad rightSide būtų dešinėje */
+  margin-right: 100px;
+}
+
+
+.topLine a
+{
+  text-decoration: none;
+  color: #ccc;
+  padding: 0 14px;
+  text-align: center; /* Centruoti teksto horizontaliai */
+  vertical-align: middle; /* Centruoti teksto vertikaliai */
+}
+
+.navigation
+{
+  display: flex;
+
+}
+
+.navigation a
+{
+  text-decoration: none;
+  color: #333;
+  font-size: 17px;
+}
+
+.navigation img
+{
+  vertical-align: middle;
+}
+.mainLogo
+{
+  width: auto;
+
+}
+.navBtn
+{
+  color: #ffffff;
+  background-color: #e0343c;
+  border-color: #e0343c;
+  width: 167px;
+  height: 40px;
+}
+
