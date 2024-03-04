@@ -3,6 +3,7 @@ import "./index.css";
 import Card from "./components/Card";
 import lizard from "./assets/lizard.jpg";
 import Avatar from "./components/Avatar";
+import Products from "./components/Products";
 
 const App = () => {
   return (
@@ -31,7 +32,15 @@ const App = () => {
         className="secondTask
     "
       >
-        <Avatar name={"Rytis Cerniauskas"} />
+        <div className="one">
+          <Avatar name={"Rytis Cerniauskas"} />
+        </div>
+        <div className="two">
+          <Avatar name={"Romas Dambrauskas"} />
+        </div>
+      </div>
+      <div className="thirdTask">
+        <Products />
       </div>
     </div>
   );

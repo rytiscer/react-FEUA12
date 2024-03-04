@@ -1,16 +1,86 @@
 .firstTask img
 {
-    width: 500px;
+    width: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
 }
 .lizardOne,
 .lizardTwo
 {
     border: 1px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.cardContent
+{
+    padding: 20px;
+}
+.cardContent h2
+{
+    padding-bottom: 10px;
+
 }
 .firstTask
 {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    width: 500px;
+    height: 380px;
+    padding: 20px;
+}
+.secondTask
+{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.one
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+.two
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.productsBox {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Dalijimas į keturias vienodas kolonas */
+        gap: 20px; /* Tarpas tarp produktų */
+      }
+.product h4
+{
+    color: grey;
+}
+.price
+{
+    font-weight: bold;
+}
+.product
+{
+    width: 250px;
+    margin: 20px 50px;
+}
+h1
+{
+    text-align: center;
 }
