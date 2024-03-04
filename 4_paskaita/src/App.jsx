@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import "./index.css";
+import Card from "./components/Card";
+import lizard from "./assets/lizard.jpg";
+import Avatar from "./components/Avatar";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <div className="firstTask">
+        <div className="lizardOne">
+          <Card
+            imageUrl={lizard}
+            title={"Lizard"}
+            subtitle={
+              "Lizards are widespread group of squamate reptiles, with over 6k species, ranging across all continents except Antarctica"
+            }
+          />
+        </div>
+        <div className="lizardTwo">
+          <Card
+            imageUrl={lizard}
+            title={"Lizard"}
+            subtitle={
+              "Lizards are widespread group of squamate reptiles, with over 6k species, ranging across all continents except Antarctica"
+            }
+          />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div
+        className="secondTask
+    "
+      >
+        <Avatar name={"Rytis Cerniauskas"} />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
