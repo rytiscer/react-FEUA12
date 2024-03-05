@@ -11,20 +11,20 @@
 .topLine img
 {
   width: 20px;
-  vertical-align: middle; /* Centruoti paveikslėlio vertikaliai */
-  display: inline-block; /* Nustatyti img kaip bloko elementą */
+  vertical-align: middle;
+  display: inline-block;
   margin-right: 5px;
 }
 
 .leftSide,
 .leftSideNav {
-  margin-right: auto; /* Pajungti dešinįjį kraštą, kad leftSide būtų kairėje */
+  margin-right: auto;
   margin-left: 250px;
 }
 
 .rightSide,
 .rightSideNav {
-  margin-left: auto; /* Pajungti kairįjį kraštą, kad rightSide būtų dešinėje */
+  margin-left: auto;
   margin-right: 250px;
 }
 
@@ -34,8 +34,8 @@
   text-decoration: none;
   color: #ccc;
   padding: 0 14px;
-  text-align: center; /* Centruoti teksto horizontaliai */
-  vertical-align: middle; /* Centruoti teksto vertikaliai */
+  text-align: center;
+  vertical-align: middle;
 }
 
 .navigation
@@ -75,5 +75,39 @@
   border-color: #e0343c;
   width: 167px;
   height: 40px;
+}
+
+
+
+
+.bottomFooter
+{
+  background-color: #494949;
+  color: #999;
+  padding-bottom: 25px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.bottomFooter ul
+{
+  margin-left: -9px;
+  margin-bottom: 12px;
+  padding: 24px 0 20px 0;
+  position: relative;
+  list-style: none;
+
+}
+.bottomFooter li
+{
+  display: inline-block;
+  padding-left: 20px;
+}
+.bottomFooter a
+{
+  color: #999;
+  padding-left: 3px;
 }
 

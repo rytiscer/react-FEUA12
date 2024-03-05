@@ -11,6 +11,7 @@ import questionLogo from "./assets/question.png";
 import searchLogo from "./assets/search.png";
 import userLogo from "./assets/user.png";
 import PhotoSlider from "./components/PhotoSlider";
+import FooterBottom from "./components/FooterBottom";
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
         navButtonText="SIŲSTI SIUNTĄ"
       />
       <PhotoSlider />
+      <footer>
+        <FooterBottom />
+      </footer>
     </div>
   );
 }
