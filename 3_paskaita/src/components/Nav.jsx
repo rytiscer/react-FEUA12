@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
+
 const Nav = (props) => {
   return (
     <div className="navigation">
@@ -27,6 +28,20 @@ const Nav = (props) => {
       </div>
     </div>
   );
+};
+
+Nav.propTypes = {
+  mainLogo: PropTypes.string.isRequired,
+  firstItemNav: PropTypes.string.isRequired,
+  secondItemNav: PropTypes.string.isRequired,
+  firstLogoNav: PropTypes.string.isRequired,
+  thirdItemNav: PropTypes.string.isRequired,
+  secondLogoNav: PropTypes.string.isRequired,
+  thirdLogoNav: PropTypes.string.isRequired,
+  fourthItemNav: PropTypes.string.isRequired,
+  fourthLogoNav: PropTypes.string.isRequired,
+  navButtonText: PropTypes.string.isRequired,
+  fifthItemNav: PropTypes.string.isRequired,
 };
 
 export default Nav;

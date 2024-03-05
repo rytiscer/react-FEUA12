@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-
+import PropTypes from "prop-types";
 const Top = (props) => {
   return (
     <div className="topLine">
@@ -25,6 +24,19 @@ const Top = (props) => {
       </div>
     </div>
   );
+};
+
+Top.propTypes = {
+  firstItemLogo: PropTypes.string.isRequired,
+  firstItem: PropTypes.string.isRequired,
+  secondItemLogo: PropTypes.string.isRequired,
+  secondItem: PropTypes.string.isRequired,
+  thirdItemLogo: PropTypes.string.isRequired,
+  thirdItem: PropTypes.string.isRequired,
+  fourthItem: PropTypes.string.isRequired,
+  fifthItem: PropTypes.string.isRequired,
+  sixthItem: PropTypes.string.isRequired,
+  seventhItem: PropTypes.string.isRequired,
 };
 
 export default Top;
