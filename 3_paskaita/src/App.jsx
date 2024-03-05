@@ -10,6 +10,7 @@ import settingsLogo from "./assets/settings.png";
 import questionLogo from "./assets/question.png";
 import searchLogo from "./assets/search.png";
 import userLogo from "./assets/user.png";
+import PhotoSlider from "./components/PhotoSlider";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         fourthLogoNav={userLogo}
         navButtonText="SIŲSTI SIUNTĄ"
       />
+      <PhotoSlider />
     </div>
   );
 }

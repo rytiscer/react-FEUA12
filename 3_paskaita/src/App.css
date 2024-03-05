@@ -19,13 +19,13 @@
 .leftSide,
 .leftSideNav {
   margin-right: auto; /* Pajungti dešinįjį kraštą, kad leftSide būtų kairėje */
-  margin-left: 100px;
+  margin-left: 250px;
 }
 
 .rightSide,
 .rightSideNav {
   margin-left: auto; /* Pajungti kairįjį kraštą, kad rightSide būtų dešinėje */
-  margin-right: 100px;
+  margin-right: 250px;
 }
 
 
