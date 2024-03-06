@@ -1,0 +1,75 @@
+body
+{
+    background-color: rgb(227, 224, 224);
+}
+.cards {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+.hero
+{
+
+    background-image: url(assets/mountains-background-kfpok0pdo9yd6ha7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hero h3
+{
+    line-height: 1.5;
+}
+.button {
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+  .main
+  {
+    text-align: center;
+    color: grey;
+    padding: 0 320px;
+  }
+.main p
+{
+    padding-bottom: 20px;
+}
+.main h2
+{
+    padding: 50px 0;
+    color: black;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .card {
+    flex-basis: calc(33.33% - 20px);
+  }
+
+  .img
+  {
+    width: 400px;
+  }
