@@ -2,104 +2,69 @@ import logoInstagram from "../assets/instagram.png";
 import logoLinkedin from "../assets/linkedin.png";
 import logoFacebook from "../assets/facebook.png";
 const FooterTop = () => {
+  const sections = [
+    {
+      title: "Įrankiai",
+      links: [
+        "Siuntų sekimas",
+        "Tarptautinė siuntų paieška",
+        "Kainų skaičiuoklė",
+        "Pašto kodai ir adresai",
+        "Paslaugų teikimo vietos",
+        "Sąskaitų faktūrų išrašymas",
+      ],
+    },
+    {
+      title: "Paslaugos",
+      links: [
+        "Siuntimas ir kitos paslaugos",
+        "LP EXPRESS savitarna",
+        "Finansinės paslaugos",
+        "Filatelija",
+        "Verslui",
+      ],
+    },
+    {
+      title: "Pagalba",
+      links: [
+        "Dažniausiai užduodami klausimai",
+        "Reikalavimai ir patarimai",
+        "Duomenų apsauga",
+        "Rašykite mums",
+        "Slapukų nustatymai",
+      ],
+    },
+    {
+      title: "Lietuvos paštas",
+      links: [
+        "Apie įmonę",
+        "Darnus vystymasis",
+        "Skaidrumas ir teisinė informacija",
+        "Patalpų nuoma ir pardavimai",
+        "Karjera",
+        "Naujienos",
+        "Kontaktai",
+        "Kontaktai žiniasklaidai",
+        "Praneškite apie korupciją",
+      ],
+    },
+  ];
+
   return (
     <div className="topFooter">
       <div className="content">
-        <div className="row">
-          <h5>Įrankiai</h5>
-          <ul>
-            <li>
-              <a href="#">Siuntų sekimas</a>
-            </li>
-            <li>
-              <a href="#">Tarptautinė siuntų paieška</a>
-            </li>
-            <li>
-              <a href="#">Kainų skaičiuoklė</a>
-            </li>
-            <li>
-              <a href="#">Pašto kodai ir adresai</a>
-            </li>
-            <li>
-              <a href="#">Paslaugų teikimo vietos</a>
-            </li>
-            <li>
-              <a href="#">Sąskaitų faktūrų išrašymas</a>
-            </li>
-          </ul>
-        </div>
-        <div className="row">
-          <h5>Paslaugos</h5>
-          <ul>
-            <li>
-              <a href="#">Siuntimas ir kitos paslaugos</a>
-            </li>
-            <li>
-              <a href="#">LP EXPRESS savitarna</a>
-            </li>
-            <li>
-              <a href="#">Finansinės paslaugos</a>
-            </li>
-            <li>
-              <a href="#">Filatelija</a>
-            </li>
-            <li>
-              <a href="#">Verslui</a>
-            </li>
-          </ul>
-        </div>
-        <div className="row">
-          <h5>Pagalba</h5>
-          <ul>
-            <li>
-              <a href="#">Dažniausiai užduodami klausimai</a>
-            </li>
-            <li>
-              <a href="#">Reikalavimai ir patarimai</a>
-            </li>
-            <li>
-              <a href="#">Duomenų apsauga</a>
-            </li>
-            <li>
-              <a href="#">Rašykite mums</a>
-            </li>
-            <li>
-              <a href="#">Slapukų nustatymai</a>
-            </li>
-          </ul>
-        </div>
-        <div className="row">
-          <h5>Lietuvos paštas</h5>
-          <ul>
-            <li>
-              <a href="#">Apie įmonę</a>
-            </li>
-            <li>
-              <a href="#">Darnus vystymasis</a>
-            </li>
-            <li>
-              <a href="#">Skaidrumas ir teisinė informacija</a>
-            </li>
-            <li>
-              <a href="#">Patalpų nuoma ir pardavimai</a>
-            </li>
-            <li>
-              <a href="#">Karjera</a>
-            </li>
-            <li>
-              <a href="#">Naujienos</a>
-            </li>
-            <li>
-              <a href="#">Kontaktai</a>
-            </li>
-            <li>
-              <a href="#">Kontaktai žiniasklaidai</a>
-            </li>
-            <li>
-              <a href="#">Praneškite apie korupciją</a>
-            </li>
-          </ul>
-        </div>
+        {sections.map((section, index) => (
+          <div className="row" key={index}>
+            <h5>{section.title}</h5>
+            <ul>
+              {section.links.map((link, linkIndex) => (
+                <li key={linkIndex}>
+                  <a href="#">{link}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
       <div className="followUs">
         <span>Sekite mūsų naujienas</span>
