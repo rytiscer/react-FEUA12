@@ -12,6 +12,7 @@ import searchLogo from "./assets/search.png";
 import userLogo from "./assets/user.png";
 import PhotoSlider from "./components/PhotoSlider";
 import FooterBottom from "./components/FooterBottom";
+import FooterTop from "./components/FooterTop";
 
 function App() {
   return (
@@ -42,9 +43,12 @@ function App() {
         navButtonText="SIŲSTI SIUNTĄ"
       />
       <PhotoSlider />
-      <footer>
-        <FooterBottom />
-      </footer>
+      <div className="main">
+        <footer>
+          <FooterTop />
+          <FooterBottom />
+        </footer>
+      </div>
     </div>
   );
 }

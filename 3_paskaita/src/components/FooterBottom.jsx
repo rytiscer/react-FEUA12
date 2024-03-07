@@ -1,7 +1,7 @@
 const FooterBottom = () => {
   return (
     <div className="bottomFooter">
-      <ul>
+      <ul className="list">
         <li>2024 © AB Lietuvos paštas</li>
         <li>Juozo Balčikonio g. 3, 03500 Vilnius</li>
         <li>
