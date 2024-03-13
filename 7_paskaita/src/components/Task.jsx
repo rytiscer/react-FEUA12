@@ -2,18 +2,23 @@ import { useState } from "react";
 
 const Task = () => {
   const [count, setCount] = useState(500);
+  const amounts = [10, 20, 50, 100];
   return (
     <div>
       <p>Current balance {count}</p>
       <div className="buttons">
-        <button onClick={() => setCount(count - 10)}>-10</button>
-        <button onClick={() => setCount(count - 20)}>-20</button>
-        <button onClick={() => setCount(count - 50)}>-50</button>
-        <button onClick={() => setCount(count - 100)}>-100</button>
-        <button onClick={() => setCount(count + 10)}>+10</button>
-        <button onClick={() => setCount(count + 20)}>+20</button>
-        <button onClick={() => setCount(count + 50)}>+50</button>
-        <button onClick={() => setCount(count + 100)}>+100</button>
+        {amounts.map((amount) => (
+          <button key={amount} onClick={() => setCount(count + amount)}>
+            {"+" + amount}
+          </button>
+        ))}
+        <br />
+        {amounts.map((amount) => (
+          <button key={amount} onClick={() => setCount(count - amount)}>
+            {"-" + amount}
+          </button>
+        ))}
+        <br />
         <button onClick={() => setCount(0)}>-ALL</button>
       </div>
     </div>
