@@ -1,5 +1,7 @@
-export const fetchProducts = () => {
-  return fetch(
+export const fetchProducts = async () => {
+  const response = await fetch(
     "https://65f1fcda034bdbecc7642cdc.mockapi.io/api/v1/products"
-  ).then((resp) => resp.json());
+  );
+
+  return response.json();
 };
