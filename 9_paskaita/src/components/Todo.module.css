@@ -1,0 +1,19 @@
+.list
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.deleteButton
+{
+    margin-left: 50px;
+    color: red;
+
+}
+.input
+{
+    width: 15rem;
+    height: 1.8rem;
+    border-radius: 5px;
+}
