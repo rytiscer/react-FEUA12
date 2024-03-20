@@ -20,7 +20,7 @@ const Services = () => {
   ];
 
   return (
-    <div className={styles.services}>
+    <div className={styles.servicesMain}>
       <h1>Services page</h1>
       <div className={styles.serviceCards}>
         {services.map((service) => (
