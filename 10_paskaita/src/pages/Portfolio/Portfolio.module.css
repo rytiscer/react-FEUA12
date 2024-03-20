@@ -1,0 +1,20 @@
+.mainPortfolio h1
+{
+    text-align: center;
+}  
+  .portfolioItems {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 stulpeliai */
+    grid-gap: 10px; /* Tarpai tarp stulpelių ir eilučių */
+  }
+  .item img
+  {
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  .item img {
+    width: 100%; /* Užtikrinti, kad nuotraukos užimtų visą vietą stulpelyje */
+    height: auto;
+  }

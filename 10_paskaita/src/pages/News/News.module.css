@@ -6,3 +6,8 @@
 {
     list-style-type: none;
 }
+span
+{
+    font-weight: bold;
+    color: red;
+}
