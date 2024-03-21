@@ -1,0 +1,37 @@
+.userCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.userCard {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userCard h2 {
+  margin-top: 0;
+}
+
+.userCard p {
+  margin: 5px 0;
+}
+
+.userCard a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.userCard a:hover {
+  background-color: #0056b3;
+}
+.userCards h2, p
+{
+    color: black;
+}

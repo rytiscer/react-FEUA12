@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import styles from "../Users/Users.module.css";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -23,9 +24,9 @@ const Users = () => {
   return (
     <div>
       <h1>Users</h1>
-      <div className="userCards">
+      <div className={styles.userCards}>
         {users.map((user) => (
-          <div key={user.id} className="userCard">
+          <div key={user.id} className={styles.userCard}>
             <h2>{user.name}</h2>
             <p>Email: {user.email}</p>
             <Link to={`/user/${user.id}`}>View Details</Link>
