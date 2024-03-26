@@ -8,11 +8,18 @@
   background-color: $primary-color;
 
   .logoContainer {
-    width: 80px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+
 
     img {
-      width: 100%;
+      width: 150%;
       height: 100%;
+    }
+    a {
+      white-space: nowrap; /* Tekstas neturės traukos ir tęsis vienoje eilutėje */
+      
     }
   }
 

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logoNew.png";
 import styles from "./NavigationBar.module.scss";
 import { navigationBarLinks } from "../../routes/consts";
 
@@ -9,6 +9,7 @@ const NavigationBar = () => {
     <header className={styles.header}>
       <div className={styles.logoContainer}>
         <img src={Logo} alt="Logo" />
+        <a href="">Travel management</a>
       </div>
       <nav className={styles.nav}>
         {navigationBarLinks.map((link) => (

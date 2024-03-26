@@ -1,0 +1,23 @@
+@import "../../styles/colors";
+
+.mainOrder
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+.leftSide img
+{
+    width: 35vw;
+    margin-right: 5rem;
+}
+.rightSide h1
+{
+    margin-bottom: 3rem;
+    color: $secondary-text-color;
+}
+.rightSide h3
+{
+    margin-bottom: 1rem;
+}
