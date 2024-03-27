@@ -9,7 +9,6 @@ const NavigationBar = () => {
     <header className={styles.header}>
       <div className={styles.logoContainer}>
         <img src={Logo} alt="Logo" />
-        <a href="">Travel management</a>
       </div>
       <nav className={styles.nav}>
         {navigationBarLinks.map((link) => (
